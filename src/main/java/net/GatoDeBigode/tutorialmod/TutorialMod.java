@@ -1,6 +1,7 @@
 package net.GatoDeBigode.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.GatoDeBigode.tutorialmod.Item.ModCreativeModTabs;
 import net.GatoDeBigode.tutorialmod.Item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,6 +29,8 @@ public class TutorialMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
@@ -49,6 +52,8 @@ public class TutorialMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.KATCHIN);
+            event.accept(ModItems.RAW_KATCHIN);
+
         }
 
     }

@@ -1,3 +1,7 @@
 {
-  "item.tutorialmod.katchin": "Katchin"
+  "item.tutorialmod.katchin": "Katchin",
+  "item.tutorialmod.raw_katchin": "Raw Katchin",
+
+  "creativetab.tutorial_tab": "Katchin Tutorial Tab"
+
 }

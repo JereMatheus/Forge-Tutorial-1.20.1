@@ -13,6 +13,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> KATCHIN = ITEMS.register("katchin",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_KATCHIN = ITEMS.register("raw_katchin",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
